@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0219"
+    android:orientation="vertical"
+    android:soundEffectsEnabled="true"
+    android:splitMotionEvents="true"
+    android:visibility="visible"
+    app:barrierMargin="@dimen/material_emphasis_medium"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:text="NITIN'S APP"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginBottom="608dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="20sp"
+        android:text="LORENTZ FACTOR"
+        android:textAlignment="gravity"
+        android:textColor="#00BCD4"
+        android:textColorLink="#0D7C8A"
+        android:textSize="30sp"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="415dp"
+        android:gravity="center_horizontal"
+        android:text="Enter the input speed"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="483dp"
+        android:paddingTop="20sp"
+        android:src="@drawable/lf1"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <Button
+        android:id="@+id/calc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="342dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="CALCULATE"
+        android:textColor="@color/black"
+        app:backgroundTint="?attr/colorControlActivated" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="272dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Answer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C00BCD4"
+    tools:context=".MainActivity3"
+    android:id="@+id/act3">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="681dp"
+        android:background="@color/purple_700"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:text="NITIN'S APP"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="603dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="20sp"
+        android:text="PRACTICE SESSION"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/inputsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="510dp"
+        android:gravity="center_horizontal"
+        android:text="Enter the input speed"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/inputlf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="452dp"
+        android:gravity="center_horizontal"
+        android:text="Enter the calculated value of lorentz factor"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginRight="167dp"
+        android:layout_marginBottom="340dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="CHECK"
+        android:textColor="@color/black"
+        app:backgroundTint="?attr/colorControlActivated" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="272dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="216dp"
+        android:text=""
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
