@@ -1,6 +1,7 @@
 package com.example.nitinsapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -19,7 +20,7 @@ public class MainActivity3 extends AppCompatActivity {
     double checkin;
     TextView answers;
     TextView out;
-    RelativeLayout r = findViewById(R.id.act3);
+    ConstraintLayout r = findViewById(R.id.act3);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity3 extends AppCompatActivity {
         EditText input = findViewById(R.id.inputsp);
         EditText check=findViewById(R.id.inputlf);
         Button calculate = findViewById(R.id.check1);
+        Button reset= findViewById(R.id.reset1);
         answers = findViewById(R.id.answer);
         out= findViewById(R.id.output);
         calculate.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +40,17 @@ public class MainActivity3 extends AppCompatActivity {
                 speed = Double.parseDouble(inputSpeed);
                 checkin = Double.parseDouble(inputcheck);
                 lorentzf(speed,checkin);
+            }
+        });
+        reset.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                input.setText(null);
+                check.setText(null);
+                answers.setText(null);
+                out.setText(null);
+                r.setBackgroundColor(Color.CYAN);
             }
         });
     }
@@ -59,7 +72,7 @@ public class MainActivity3 extends AppCompatActivity {
                 v.vibrate(1000);
                 r.setBackgroundColor(Color.RED);
             }
-            else if(checkin==factor){
+            else{
                 answers.setText(String.valueOf(ca));
                 r.setBackgroundColor(Color.GREEN);
             }

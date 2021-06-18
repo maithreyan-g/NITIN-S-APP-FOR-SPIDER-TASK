@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3C00BCD4"
-    tools:context=".MainActivity3"
+    android:background="#FF00FFFF"
+    tools:context=".MainActivity"
     android:id="@+id/act3">
 
     <TextView
@@ -18,6 +18,7 @@
         android:fontFamily="sans-serif-medium"
         android:paddingStart="20sp"
         android:paddingEnd="20sp"
+        app:layout_constraintBottom_toTopOf="@id/practice"
         android:text="NITIN'S APP"
         android:textColor="@color/white"
         android:textSize="35sp" />
@@ -29,46 +30,41 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="603dp"
         android:fontFamily="sans-serif-black"
         android:paddingTop="20sp"
         android:text="PRACTICE SESSION"
         android:textAlignment="gravity"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
 
     <EditText
         android:id="@+id/inputsp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="510dp"
+        android:layout_marginTop="64dp"
         android:gravity="center_horizontal"
         android:text="Enter the input speed"
         android:textAlignment="center"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/practice"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/inputlf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="452dp"
+        android:layout_marginTop="32dp"
         android:gravity="center_horizontal"
         android:text="Enter the calculated value of lorentz factor"
         android:textAlignment="center"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/inputsp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/check1"
@@ -77,17 +73,36 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginRight="167dp"
-        android:layout_marginBottom="340dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/button_design"
         android:fontFamily="sans-serif-condensed-medium"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:text="CHECK"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_design"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="RESET"
         android:textColor="@color/black"
-        app:backgroundTint="?attr/colorControlActivated" />
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputlf" />
 
     <TextView
         android:id="@+id/answer"
@@ -95,24 +110,27 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20sp"
-        android:layout_marginBottom="272dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-condensed"
         android:text="Verify"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/reset1"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/output"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="216dp"
+
+        android:gravity="center"
         android:text=""
         android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
